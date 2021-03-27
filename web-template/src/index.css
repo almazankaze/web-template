@@ -1,6 +1,7 @@
 :root {
   --link-color: black;
   --link-hover: #adb5bd;
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -49,6 +50,7 @@ h2 {
 .btn-link {
   background: none !important;
   border: none;
+  outline: none;
   cursor: pointer;
   font-size: 16px !important;
 }

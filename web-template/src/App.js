@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <Router>
         <TopNav />
-
         <Switch>
           <Route exact path="/">
             <Home />

@@ -8,11 +8,15 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import NavBar from "./NavBar";
 import NavBarMobile from "./NavBarMobile";
 import SideBar from "./SideBar";
+import SubMenu from "../SubMenu";
+import { useGlobalContext } from "../../Context";
 
 function TopNav() {
+  const { closeSubMenu } = useGlobalContext();
+
   return (
     <nav className="topNav">
-      <div className="top-row">
+      <div className="top-row" onMouseOver={closeSubMenu}>
         <div className="left-content">
           <button className="link btn-link">
             Contact <ExpandMoreIcon className="link-icon" />
@@ -39,6 +43,7 @@ function TopNav() {
       </div>
 
       <NavBar />
+      <SubMenu />
       <NavBarMobile />
       <SideBar />
     </nav>

@@ -4,25 +4,25 @@ const subLinks = [
   {
     page: "Shop",
     links: [
-      { label: "payment", icon: "", url: "/products" },
-      { label: "terminal", icon: "", url: "/products" },
-      { label: "connect", icon: "", url: "/products" },
+      { label: "payment", url: "/products" },
+      { label: "terminal", url: "/products" },
+      { label: "connect", url: "/products" },
     ],
   },
   {
     page: "Blog",
     links: [
-      { label: "plugins", icon: "", url: "/products" },
-      { label: "libraries", icon: "", url: "/products" },
-      { label: "help", icon: "", url: "/products" },
-      { label: "billing", icon: "", url: "/products" },
+      { label: "plugins", url: "/products" },
+      { label: "libraries", url: "/products" },
+      { label: "help", url: "/products" },
+      { label: "billing", url: "/products" },
     ],
   },
   {
     page: "Media",
     links: [
-      { label: "about", icon: "", url: "/products" },
-      { label: "customers", icon: "", url: "/products" },
+      { label: "about", url: "/products" },
+      { label: "customers", url: "/products" },
     ],
   },
 ];

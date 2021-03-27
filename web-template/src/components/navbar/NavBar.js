@@ -6,8 +6,24 @@ import { useGlobalContext } from "../../Context";
 function NavBar() {
   const { openSubMenu, closeSubMenu } = useGlobalContext();
 
+  const displaySubMenu = (e) => {
+    const page = e.target.textContent;
+    const tempLink = e.target.getBoundingClientRect();
+
+    const center = (tempLink.left + tempLink.right) / 2;
+    const bottom = tempLink.bottom;
+
+    openSubMenu(page, { center, bottom });
+  };
+
+  const handleSubMenu = (e) => {
+    if (!e.target.classList.contains("nav-link")) {
+      closeSubMenu();
+    }
+  };
+
   return (
-    <div className="navbar">
+    <div className="navbar" onMouseOver={handleSubMenu}>
       <ul className="nav-menu">
         <li className="nav-item">
           <NavLink
@@ -24,6 +40,7 @@ function NavBar() {
             to="/shop"
             activeClassName="current"
             className="link nav-link"
+            onMouseOver={displaySubMenu}
           >
             Shop
           </NavLink>
@@ -33,6 +50,7 @@ function NavBar() {
             to="/blog"
             activeClassName="current"
             className="link nav-link"
+            onMouseOver={displaySubMenu}
           >
             Blog
           </NavLink>
@@ -42,6 +60,7 @@ function NavBar() {
             to="/media"
             activeClassName="current"
             className="link nav-link"
+            onMouseOver={displaySubMenu}
           >
             Media
           </NavLink>
