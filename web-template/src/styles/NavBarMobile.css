@@ -1,7 +1,7 @@
 .navbar-mobile {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -12,6 +12,11 @@
 .left-mobile {
   display: flex;
   align-items: center;
+}
+
+.menu-icon {
+  font-size: 32px !important;
+  margin-right: 0.5rem;
 }
 
 .right-mobile {

@@ -26,7 +26,7 @@
 }
 
 .nav-icon:hover {
-  color: #adb5bd;
+  color: var(--link-hover);
 }
 
 .home-link {

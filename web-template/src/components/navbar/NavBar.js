@@ -1,8 +1,11 @@
 import React from "react";
 import "../../styles/NavBar.css";
 import { NavLink } from "react-router-dom";
+import { useGlobalContext } from "../../Context";
 
 function NavBar() {
+  const { openSubMenu, closeSubMenu } = useGlobalContext();
+
   return (
     <div className="navbar">
       <ul className="nav-menu">

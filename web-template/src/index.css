@@ -1,3 +1,8 @@
+:root {
+  --link-color: black;
+  --link-hover: #adb5bd;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -34,9 +39,16 @@ h2 {
 }
 
 .link:hover {
-  color: #adb5bd;
+  color: var(--link-hover);
 }
 
 .link > .link-icon {
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.btn-link {
+  background: none !important;
+  border: none;
+  cursor: pointer;
+  font-size: 16px !important;
 }

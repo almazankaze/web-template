@@ -7,15 +7,16 @@ import PersonAddIcon from "@material-ui/icons/PersonAdd";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import NavBar from "./NavBar";
 import NavBarMobile from "./NavBarMobile";
+import SideBar from "./SideBar";
 
 function TopNav() {
   return (
     <nav className="topNav">
       <div className="top-row">
         <div className="left-content">
-          <Link to="/" className="link">
+          <button className="link btn-link">
             Contact <ExpandMoreIcon className="link-icon" />
-          </Link>
+          </button>
 
           <div className="vl"></div>
 
@@ -39,6 +40,7 @@ function TopNav() {
 
       <NavBar />
       <NavBarMobile />
+      <SideBar />
     </nav>
   );
 }

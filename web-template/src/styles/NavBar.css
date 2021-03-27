@@ -15,11 +15,11 @@
 }
 
 .nav-link:hover:not(.current) {
-  color: #adb5bd;
+  color: var(--link-hover);
 }
 
 .current {
-  color: #adb5bd;
+  color: var(--link-hover);
 }
 
 @media only screen and (min-width: 780px) {
