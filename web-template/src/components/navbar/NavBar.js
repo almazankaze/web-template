@@ -93,8 +93,8 @@ function NavBar() {
             Contact Us
           </NavLink>
         </li>
+        <SearchBox />
       </ul>
-      <SearchBox />
     </div>
   );
 }
