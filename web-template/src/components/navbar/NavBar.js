@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/NavBar.css";
 import { NavLink } from "react-router-dom";
 import { useGlobalContext } from "../../Context";
+import SearchBox from "./SearchBox";
 
 function NavBar() {
   const { openSubMenu, closeSubMenu } = useGlobalContext();
@@ -93,6 +94,7 @@ function NavBar() {
           </NavLink>
         </li>
       </ul>
+      <SearchBox />
     </div>
   );
 }

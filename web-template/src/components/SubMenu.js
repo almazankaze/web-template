@@ -20,11 +20,15 @@ function SubMenu() {
     submenu.style.left = `${center}px`;
     submenu.style.top = `${bottom}px`;
 
-    if (links.length >= 4) {
+    if (links.length > 3) {
       setColumns("col-2");
-    } else if (links.length >= 7) {
+    }
+
+    if (links.length > 6) {
       setColumns("col-3");
-    } else if (links.length >= 13) {
+    }
+
+    if (links.length > 13) {
       setColumns("col-4");
     }
   }, [location, links]);
@@ -38,7 +42,7 @@ function SubMenu() {
         {links.map((link, index) => {
           const { label, url } = link;
           return (
-            <Link to={url} className="link nav-link">
+            <Link key={index} to={url} className="link nav-link">
               {label}
             </Link>
           );

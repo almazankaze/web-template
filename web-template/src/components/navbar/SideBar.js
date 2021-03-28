@@ -3,6 +3,7 @@ import "../../styles/SideBar.css";
 import subLinks from "../../subMenuLinks";
 import { useGlobalContext } from "../../Context";
 import CloseIcon from "@material-ui/icons/Close";
+import SideBarMenu from "./SideBarMenu";
 
 function SideBar() {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -16,6 +17,16 @@ function SideBar() {
         <button className="close-btn" onClick={closeSidebar}>
           <CloseIcon />
         </button>
+        <div className="sidebar-links">
+          {subLinks.map((item, index) => {
+            const { page, pageURL, links } = item;
+            return (
+              <div key={index} className="sidebar-item">
+                <SideBarMenu page={page} pageURL={pageURL} links={links} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </aside>
   );

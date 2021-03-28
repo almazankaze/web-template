@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import PersonAddIcon from "@material-ui/icons/PersonAdd";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import NavBar from "./NavBar";
 import NavBarMobile from "./NavBarMobile";
 import SideBar from "./SideBar";
 import SubMenu from "../SubMenu";
 import { useGlobalContext } from "../../Context";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 function TopNav() {
   const { closeSubMenu } = useGlobalContext();
