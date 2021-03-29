@@ -10,29 +10,22 @@ const subLinks = [
     page: "Shop",
     pageURL: "/shop",
     links: [
-      { label: "payment", url: "/products" },
-      { label: "terminal", url: "/products" },
-      { label: "connect", url: "/products" },
+      { label: "payment", url: "/about" },
+      { label: "terminal", url: "/about" },
+      { label: "connect", url: "/about" },
     ],
   },
   {
     page: "Blog",
     pageURL: "/blog",
-    links: [
-      { label: "plugins", url: "/products" },
-      { label: "libraries", url: "/products" },
-      { label: "help", url: "/products" },
-      { label: "billing", url: "/products" },
-      { label: "plugins", url: "/products" },
-      { label: "libraries", url: "/products" },
-    ],
+    links: [],
   },
   {
     page: "Media",
     pageURL: "/media",
     links: [
-      { label: "about", url: "/products" },
-      { label: "customers", url: "/products" },
+      { label: "about", url: "/about" },
+      { label: "customers", url: "/about" },
     ],
   },
   {

@@ -10,7 +10,7 @@ function SearchBox() {
 
   return (
     <div className="searchBox">
-      <form className="search-form">
+      <form className="search-form" onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
@@ -19,6 +19,7 @@ function SearchBox() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
+        <button type="submit">click</button>
       </form>
     </div>
   );

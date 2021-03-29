@@ -3,10 +3,6 @@ import "../../styles/TopNav.css";
 import { Link } from "react-router-dom";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import PersonAddIcon from "@material-ui/icons/PersonAdd";
-import NavBar from "./NavBar";
-import NavBarMobile from "./NavBarMobile";
-import SideBar from "./SideBar";
-import SubMenu from "../SubMenu";
 import { useGlobalContext } from "../../Context";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import SearchIcon from "@material-ui/icons/Search";
@@ -41,11 +37,6 @@ function TopNav() {
           <ShoppingCartIcon className="nav-icon" />
         </div>
       </div>
-
-      <NavBar />
-      <SubMenu />
-      <NavBarMobile />
-      <SideBar />
     </nav>
   );
 }

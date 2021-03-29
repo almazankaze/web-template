@@ -6,6 +6,7 @@ import "../styles/SubMenu.css";
 function SubMenu() {
   const {
     isSubmenuOpen,
+    closeSubMenu,
     location,
     page: { page, links },
   } = useGlobalContext();
@@ -42,7 +43,12 @@ function SubMenu() {
         {links.map((link, index) => {
           const { label, url } = link;
           return (
-            <Link key={index} to={url} className="link nav-link">
+            <Link
+              key={index}
+              to={url}
+              className="link nav-link"
+              onClick={closeSubMenu}
+            >
               {label}
             </Link>
           );

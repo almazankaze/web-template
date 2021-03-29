@@ -1,11 +1,13 @@
 import React from "react";
+import Carousel from "../components/Carousel";
 import { useGlobalContext } from "../Context";
+import sliderData from "../data/sliderData";
 
 function Home() {
   const { closeSubMenu } = useGlobalContext();
   return (
     <div className="home" onMouseOver={closeSubMenu}>
-      <h2>Home</h2>
+      <Carousel slides={sliderData} />
     </div>
   );
 }

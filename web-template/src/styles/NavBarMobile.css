@@ -27,6 +27,16 @@
   margin-right: 0;
 }
 
+.nav-icon {
+  font-size: 28px !important;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.nav-icon:hover {
+  color: var(--link-hover);
+}
+
 @media only screen and (min-width: 780px) {
   .navbar-mobile {
     display: none;
