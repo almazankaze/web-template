@@ -27,7 +27,7 @@
   margin-right: 0;
 }
 
-.nav-icon {
+.nav-icon-mobile {
   font-size: 28px !important;
   margin-right: 1rem;
   cursor: pointer;
@@ -37,7 +37,17 @@
   color: var(--link-hover);
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 768px) {
+  .menu-icon {
+    font-size: 48px !important;
+  }
+
+  .nav-icon-mobile {
+    font-size: 40px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .navbar-mobile {
     display: none;
   }

@@ -15,14 +15,13 @@ function NavBarMobile() {
         <button className="btn-link" onClick={openSidebar}>
           <MenuIcon className="menu-icon" />
         </button>
-        <h4>Menu</h4>
       </div>
       <div className="right-mobile">
-        <SearchIcon className="nav-icon" />
+        <SearchIcon className="nav-icon-mobile" />
 
-        <PersonAddIcon className="nav-icon" />
+        <PersonAddIcon className="nav-icon-mobile" />
 
-        <ShoppingCartIcon className="nav-icon" />
+        <ShoppingCartIcon className="nav-icon-mobile" />
       </div>
     </div>
   );

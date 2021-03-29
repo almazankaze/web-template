@@ -23,7 +23,7 @@
   color: var(--link-hover);
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 1200px) {
   .navbar {
     display: block;
     position: -webkit-sticky;

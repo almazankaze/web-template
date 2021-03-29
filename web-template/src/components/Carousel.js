@@ -20,7 +20,7 @@ function Carousel({ slides, show }) {
   useEffect(() => {
     let slider = setInterval(() => {
       setCurrent(current + 1);
-    }, 5000);
+    }, 8000);
     return () => {
       clearInterval(slider);
     };
@@ -31,7 +31,7 @@ function Carousel({ slides, show }) {
       <button className="arrow-icon left">
         <ChevronLeftIcon onClick={() => setCurrent(current + 1)} />
       </button>
-      <button className="arrow-icon">
+      <button className="arrow-icon right">
         <ChevronRightIcon onClick={() => setCurrent(current - 1)} />
       </button>
       {slides.map((slide, index) => {

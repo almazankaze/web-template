@@ -15,7 +15,7 @@ function SideBar() {
     >
       <div className="sidebar">
         <button className="close-btn" onClick={closeSidebar}>
-          <CloseIcon />
+          <CloseIcon className="close-icon" />
         </button>
         <div className="sidebar-links">
           {subLinks.map((item, index) => {
