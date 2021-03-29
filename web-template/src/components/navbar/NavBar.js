@@ -11,7 +11,7 @@ function NavBar() {
     const tempLink = e.target.getBoundingClientRect();
 
     const center = (tempLink.left + tempLink.right) / 2;
-    const bottom = tempLink.bottom;
+    const bottom = tempLink.bottom + window.scrollY;
 
     openSubMenu(page, { center, bottom });
   };

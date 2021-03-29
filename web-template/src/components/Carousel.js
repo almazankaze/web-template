@@ -1,28 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import "../styles/Carousel.css";
 
-function Carousel({ slides }) {
+function Carousel({ slides, show }) {
   const [current, setCurrent] = useState(0);
-  const [showArrowBtn, setShowArrowBtn] = useState(false);
   const length = slides.length;
 
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
+  useEffect(() => {
+    const lastIndex = length - 1;
+    if (current < 0) {
+      setCurrent(lastIndex);
+    }
+    if (current > lastIndex) {
+      setCurrent(0);
+    }
+  }, [current, length]);
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setCurrent(current + 1);
+    }, 5000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [current]);
 
   return (
     <div className="carousel-container">
       <button className="arrow-icon left">
-        <ChevronLeftIcon onClick={prevSlide} />
+        <ChevronLeftIcon onClick={() => setCurrent(current + 1)} />
       </button>
       <button className="arrow-icon">
-        <ChevronRightIcon onClick={nextSlide} />
+        <ChevronRightIcon onClick={() => setCurrent(current - 1)} />
       </button>
       {slides.map((slide, index) => {
         const { image, alt, heading, productInfo } = slide;
