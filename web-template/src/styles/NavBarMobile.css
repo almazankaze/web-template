@@ -8,6 +8,7 @@
   z-index: 100;
   border-bottom: 0.1px solid lightgray;
   box-shadow: var(--dark-shadow);
+  background-color: #fff;
 }
 
 .left-mobile {

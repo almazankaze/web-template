@@ -1,0 +1,46 @@
+.menuItems {
+  width: 100%;
+  display: grid;
+}
+
+.menuItem {
+  margin-bottom: 1rem;
+}
+
+.menuItem-title > button {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.menu-links {
+  list-style: none;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.menu-links.show {
+  height: auto;
+  max-height: 250px;
+}
+
+.menuLink-text {
+  color: var(--gray-400);
+  font-size: 0.813rem;
+}
+
+/* Very small Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+}
