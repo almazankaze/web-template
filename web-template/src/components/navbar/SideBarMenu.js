@@ -31,7 +31,7 @@ function SideBarMenu({ page, pageURL, links }) {
           ""
         ) : (
           <button className="btn-link" onClick={handleSubMenu}>
-            <ExpandMoreIcon />
+            <ExpandMoreIcon className="expand-icon" />
           </button>
         )}
       </div>

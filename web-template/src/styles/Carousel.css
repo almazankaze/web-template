@@ -1,20 +1,16 @@
 .carousel-container {
   position: relative;
-  height: 55vh;
+  height: 60vh;
   width: 100%;
   overflow: hidden;
 }
 
 .slide-image {
-  height: 55vh;
+  height: 60vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.arrow-icon {
-  display: none;
 }
 
 .slide {
@@ -39,14 +35,27 @@
   text-align: center;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+.img-btn {
+  background: hsl(200, 26%, 29%);
+  border-color: #fff;
+  margin: 0;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+/* Smartphones (portrait) ----------- */
+.arrow-icon {
+  display: none;
+}
+
+/* Very small Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
   .carousel-container {
-    height: 45vh;
+    height: 60vh;
   }
 
   .slide-image {
-    height: 45vh;
+    height: 60vh;
   }
 
   .image-content {
@@ -54,14 +63,18 @@
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .image-content {
     width: 400px;
   }
+
+  .arrow-icon {
+    padding: 0.875rem 1rem !important;
+  }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Desktops laptops and iPads----------- */
 @media only screen and (min-width: 768px) {
   .arrow-icon {
     display: block;
@@ -89,11 +102,8 @@
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-@media only screen and (min-width: 1200px) {
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
   .carousel-container {
     height: 91vh;
   }

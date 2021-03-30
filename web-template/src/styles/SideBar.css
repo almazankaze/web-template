@@ -62,7 +62,14 @@
   max-height: 250px;
 }
 
-@media only screen and (min-width: 768px) {
+/* Smartphones (portrait) ----------- */
+
+/* Very small Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .close-btn {
     font-size: 3rem;
   }
@@ -70,9 +77,18 @@
   .close-icon {
     font-size: 42px !important;
   }
+
+  .sidebar-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .expand-icon {
+    font-size: 3rem !important;
+  }
 }
 
-@media only screen and (min-width: 1200px) {
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
   .sidebar-wrapper {
     display: none;
   }

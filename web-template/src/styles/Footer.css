@@ -1,6 +1,7 @@
 /* Smartphones (portrait) ----------- */
-.perkSpan {
-  height: 80vh;
+.footer-container {
+  background-color: #484848;
+  color: #fff;
 }
 
 /* Very small Smartphones (portrait) ----------- */
