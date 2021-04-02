@@ -26,13 +26,19 @@ function MobileMenuItem({ title, links }) {
           const { icon, label, url } = link;
           return (
             <li key={index} className="menu-link">
-              <Link
-                to={url}
-                className="link menuLink-text"
-                onClick={handleCloseMenu}
-              >
-                {label}
-              </Link>
+              {icon}
+
+              {url ? (
+                <Link
+                  to={url}
+                  className="link menuLink-text"
+                  onClick={handleCloseMenu}
+                >
+                  {label}
+                </Link>
+              ) : (
+                <p>{label}</p>
+              )}
             </li>
           );
         })}

@@ -1,0 +1,47 @@
+/* Smartphones (portrait) ----------- */
+
+.newsLetter {
+}
+
+.newsLetter > p {
+  font-size: 0.875rem !important;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.newsLetter > span {
+  color: var(--gray-400);
+  font-size: 0.813rem;
+}
+
+.subBox {
+  margin-top: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.subBox > input {
+  border: none;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  background-color: transparent;
+  outline-width: 0;
+}
+
+.mail-icon {
+  color: black !important;
+}
+
+/* Very small Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+}

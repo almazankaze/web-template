@@ -1,15 +1,28 @@
+import React from "react";
+import LocationOnIcon from "@material-ui/icons/LocationOn";
+import PhoneIcon from "@material-ui/icons/Phone";
+import MailIcon from "@material-ui/icons/Mail";
+
 const footerLinks = [
   {
     title: "Store Information",
     links: [
       {
-        icon: "",
+        icon: <LocationOnIcon className="footer-icon" />,
         label:
           "60, 29th Street, San Francisco, CA 94110, United States of America",
         url: "",
       },
-      { icon: "", label: "(+00) 123-456-789", url: "" },
-      { icon: "", label: "demo@example.com", url: "" },
+      {
+        icon: <PhoneIcon className="footer-icon" />,
+        label: "(+00) 123-456-789",
+        url: "",
+      },
+      {
+        icon: <MailIcon className="footer-icon" />,
+        label: "demo@example.com",
+        url: "",
+      },
     ],
   },
   {
@@ -18,7 +31,7 @@ const footerLinks = [
       {
         icon: "",
         label: "Bookmark",
-        url: "",
+        url: "/",
       },
       { icon: "", label: "Features", url: "/" },
       { icon: "", label: "Sitemap", url: "/" },

@@ -28,6 +28,17 @@
   max-height: 250px;
 }
 
+.menu-link {
+  display: flex;
+  align-items: center;
+}
+
+.menu-link > p {
+  color: var(--gray-400);
+  font-size: 0.813rem;
+  padding: 0.5rem;
+}
+
 .menuLink-text {
   color: var(--gray-400);
   font-size: 0.813rem;
